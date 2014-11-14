@@ -1,0 +1,139 @@
+
+html {
+  /*----- Stop elastic scrolling on OSX -----*/
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    margin: 0;
+    
+    /*----- Stop elastic scrolling on OSX -----*/
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+    /*----- Perspective needs to be applied in order for child elements to use 3D transforms -----*/
+    perspective: 1200px;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v14/2tsd397wLxj96qwHyNIkxBkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v14/Hgo13k-tfSpn0qi1SFdUfYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v14/oMMgfZMQthOryQo9n22dcn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v14/RxZJdnzeo3R5zSexge8UUYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v14/d-6IYplOFocCacKzxwXSOIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+.tile, .tileText, .tilePhone {
+    background-color: $gray-medium;   
+    color: $very-dark;
+    width: 100%;
+    padding: 36px;
+    font-weight: 300;
+}
+
+
+.tileText {
+    background-color: $accent;  
+}
+
+
+.tilePhone {
+    background-color: $gray-dark;   
+    color: $gray-light;
+}
+
+
+.tileLabel, .tileMeta {
+}
+
+
+.tileTitleSmall, .tileTitleLarge, .tileTitlePhone, 
+.tileTitleTextSmall, .tileTitleTextLarge, .tileTitleWebSmall, .tileTitleWebLarge {
+    font-weight: 100;
+    font-size: $base-font-size * 4;
+    color: $very-light;
+    margin-top: $base-font-size * 1.5;
+    margin-bottom: $base-font-size * 2.25;
+}
+
+
+.tileTitleSmall, .tileTitleTextSmall, .tileTitleWebSmall {
+    font-weight: 300;
+    font-size: $base-font-size * 2;
+    line-height: $base-font-size * 2.5;
+    margin-top: $base-font-size * 0.75;
+    margin-bottom: $base-font-size * 1.0;
+}
+
+
+.tileTitleWebSmall, .tileTitleWebLarge {
+    text-wrap: unrestricted;
+    word-wrap: break-word;
+}
+
+
+.tileTitleTextLarge {
+    margin-top: $base-font-size * 0.75;  
+}
+
+
+.tileTitleTextSmall {
+    margin-top: $base-font-size * -0.25;  
+}
+
+
+.tileTitlePhone {
+    font-weight: 300;
+    color: $accent;
+    font-size: $base-font-size * 2.5;
+    line-height: $base-font-size * 3;
+    margin-top: $base-font-size;
+    margin-bottom: $base-font-size * 1.5;
+}
