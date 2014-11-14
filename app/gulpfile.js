@@ -37,10 +37,6 @@ var express_port = 8080;
 var livereload_port = 35729;
 
 
-//----- Handlebars template precompilatino
-//----- gulp-handlebars, gulp-wrap, and gulp-declare
-
-
 var paths = {
 	app  : './',
 	dist : '../www/',
@@ -184,6 +180,8 @@ gulp.task('images', function(){
 
 
 //===== templates
+//----- Handlebars template precompilation.
+//----- Uses gulp-handlebars, gulp-wrap, and gulp-declare.
 gulp.task('templates', function(){
 	return gulp.src(sources.templates)
 		.pipe(plugins.handlebars({
