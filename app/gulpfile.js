@@ -87,7 +87,6 @@ var destinations = {
 };
 
 
-
 //===== Banner to use at top of production files
 var pkg = require('./package.json');
 var banner = [
@@ -98,6 +97,7 @@ var banner = [
     ' * <%= pkg.url %>\n' +
     ' */\n\n',
   ''].join('\n');
+
 
 var bannerHTML = [
     '<!--\n' +
